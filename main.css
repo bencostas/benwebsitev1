@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(-70deg, #531eb6, #4d6f8f, #3c396b, #0d1b96);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    box-sizing:border-box;
+    font-family: monospace;
+    color: white;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*Navbar*/
+
+#navbar {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    transition: all 1s;
+    position: fixed;
+    top: 0px;
+}
+
+@media screen and (max-width: 750px) {
+    #navbar {
+        height: 270px;
+    }
+
+    #navbar li a {
+        display: block;
+        font-size: 15px;
+    }
+
+    #welcome-section h1{
+        font-size: 45px;
+    }
+    #welcome-section h3{
+        font-size: 45px;
+    }
+}
+
+#navbar img {
+    margin: 30px 10px 0px 30px;
+}
+
+#navbar ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 25px;
+    color: white;
+}
+
+#navbar li a:hover {
+    color: grey;
+}
+
+/*welcome section*/
+
+#welcome-section {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 500px 0px 0px 0px;
+}
+
+/*About*/
+
+#about {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 700px 0px 0px 0px;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+#info {
+    color: black;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 25px;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 24px;
+    text-align: left;
+}
+
+/*Projects*/
+
+#projects {
+    height: 500px;
+}
+
+#projects h1{
+    text-align: center;
+    text-decoration: overline;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+/*Contact*/
+
+#contact {
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: white;
+    color: black;
+}
+
+#contact a{
+    color: black;
+    padding: 30px;
+    font-size: 35px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#contact a:hover {
+    color: grey;
+    font-size: 45px;
+}
+
+/*Footer*/
+
+footer {
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(60, 100, 116)
+}
