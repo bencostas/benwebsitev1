@@ -160,6 +160,7 @@ footer {
 
 ::-webkit-scrollbar {
     width: 10px;
+    background: black;
 }
 
 ::-webkit-scrollbar-thumb {
